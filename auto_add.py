@@ -22,7 +22,7 @@ htmlend = '''
 </html>
 '''
 files = os.listdir(str(home_dir / 'docs.html'))
-lsstr = ''
+
 for f in files:
     if (f!="auto_add.py" and f!="index.html"):
         htmlbegin += f'''<h5><a href="./docs.html/{f}" style="text-decoration: none" target="_blank">{f}</a></h5>\n'''
@@ -30,5 +30,5 @@ for f in files:
 html = htmlbegin + htmlend
 
 
-with open(str(home_dir / 'index.html'), 'w') as f:
+with open(str(home_dir / 'index.html'), 'w', encoding='utf-8') as f:
     f.writelines(html)
