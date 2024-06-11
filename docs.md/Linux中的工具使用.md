@@ -84,3 +84,19 @@
     ```
 
 这些是 `screen` 的一些基本和常用命令，可以帮助用户更有效地管理和使用 Linux 终端。
+
+## 解压缩文件
+
+使用`gzip`命令解压文件：`gzip -d filename.gz` 	`-d`参数表示“解压”（decompress）
+
+使用`tar`命令解压文件：`tar -xvf filename.tar`
+
+如果`.tar`文件是通过`gzip`压缩的（即`.tar.gz`或`.tgz`文件），可以使用以下命令解压：
+
+`tar -zxvf filename.tar.gz`
+
+`tar -zxvf filename.tgz`
+
+## 内存/存储/系统信息
+
+查看内存大小：`free -h`
